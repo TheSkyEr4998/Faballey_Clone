@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+           box-sizing: border-box;
+              background-color:#f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          
+        }
+        .main{
+            width: 43vw;
+            height: 70vh;
+            margin: auto;
+            border: 0.3vw solid white;
+            border-radius:1.3vw;
+            margin-top: 15vh;
+           
+            text-align: center;
+            box-shadow: 0px 0px 4px 4px #f3f4f6 ;
+            background-color: white;
+
+        }
+        h1{
+            font-size: 3.6vw;
+            margin-left: -10vw;
+            margin-top: 2vh;
+            text-decoration: underline;
+            color: black;
+           
+            
+        }
+        p{
+            font-size: 1.4vw;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 550;
+            margin-left: -23vh;
+            margin-top: 1vh;
+        }
+        input{
+            margin-left: -13vh;
+           margin-top: 2vh;
+            border: none;
+            outline-style: none;
+              outline: none;
+            background-color: transparent;
+            border: 0.2vw solid black;
+            border-radius: 2vw;
+            height: 6vh;
+            width: 18vw;
+          ;
+
+
+        }
+        button{
+            width: 16.5vw;
+            height: 6.6vh;
+            margin-left: -5.5vw;
+            background-color: transparent;
+            border: none;
+            border: 0.4vh solid black;
+            border-radius: 4vw;
+            margin-top: 2.5vw;
+          
+        }
+        button:hover{
+            background-color: #ff8e06;
+            color: white;
+            border: 0.1vh solid wheat;
+        }
+        input::placeholder{
+
+            font-size: 1.1vw;
+            font-weight: 100;
+        }
+        .name
+        {
+           position: relative;
+           bottom: -3vh;
+        }
+        .div
+        {
+            margin-top: -2vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Sign up</h1>
+       <div class="div">
+        <input  type="text" style="margin-top: 5vh;"  placeholder="&nbsp; Enter Your Name" class="name" required/>
+        <br>
+        <input type="email" style="margin-top: 5vh;" id="email" placeholder="&nbsp; Enter Your Email" />
+       <br>
+        <input type="text" id="number"  placeholder="&nbsp; Enter Phone Number" required>
+       <br>
+        <input type="password" id="password" placeholder="&nbsp; Create Password" required/>
+        <br>
+       </div>
+      <a href="login.html">  <button id="sign" type="submit" onclick="signup()" >Sign up</button></a>
+   
+    </div>
+    <script>
+        var email = document.getElementById("email")
+        var number = document.getElementById("number")
+        var password = document.getElementById("password")
+        var sign = document.getElementById("sign")
+          if(localStorage.getItem("signup") == null)
+          {
+              localStorage.setItem("signup",JSON.stringify([]))
+          }
+        function signup()
+        {
+           
+          if(email.value !== "" && number.value !== "" && password.value !== "" )
+          {
+            var arr = JSON.parse(localStorage.getItem("signup"))
+           var tem = {
+               emails:email.value,
+               phone:number.value,
+               passwords:password.value,
+           }
+           alert("You have successfully signup goto login page")
+           arr.push(tem);
+           localStorage.setItem("signup",JSON.stringify(arr))
+        
+          }
+          else{
+              alert("please fill the required area")
+          }
+          // var a = document.createElement('a')
+          // a.href = login.html
+         //  sign.append(a)
+        }
+    </script>
+</body>
+</html>

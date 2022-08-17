@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+           
+            box-sizing: border-box;
+              background-color: #f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        .main{
+            width: 43vw;
+            height: 60vh;
+            margin: auto;
+            border: 0.3vw solid white;
+            border-radius:1.3vw;
+            margin-top: 17vh;
+            color: black;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 4px 4px #f3f4f6;
+
+        }
+        h1{
+            font-size: 3.6vw;
+            margin-left: -10vw;
+            margin-top: 5vh;
+            text-decoration: underline;
+            
+        }
+        h1:hover{
+            color: #ff8e06;
+        }
+        
+      
+        input{
+            margin-left: -13vh;
+            position: relative;
+         
+            border: none;
+            outline-style: none;
+              outline: none;
+            background-color: transparent;
+            border: 0.2vw solid black;
+            border-radius: 2vw;
+            height: 6vh;
+            width: 18vw;
+            margin-top: 2.5vh;
+       
+        }
+        button{
+            width: 16vw;
+            height: 6.5vh;
+            margin-left: -5.2vw;
+            background-color: transparent;
+            border: none;
+            border: 0.4vh solid black;
+            border-radius: 4vw;
+            margin-top: 3vw;
+      
+        }
+        button:hover{
+            background-color: #ff8e06;
+            color: white;
+            border: 0.1vh solid wheat;
+        }
+        input::placeholder{
+         
+            font-size: 1vw;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        
+        <input style="margin-top:5vh;" type="email" id="email" placeholder="&nbsp; Enter email" />
+       
+       <br>
+        <input type="password" id="password" placeholder=" &nbsp; Enter Password"/>
+        <br>
+   <a href="index.html" id="log"> <div > <button onclick="login()" >Login</button></div></a>
+    </div>
+    <script>
+        let email = document.getElementById("email")
+        let password = document.getElementById("password")
+        let log  = document.getElementById("log")
+        function login()
+        {
+            var array = JSON.parse(localStorage.getItem("signup"))
+            console.log(array.length)
+            for(let i = 0 ; i < array.length ;i++) {
+                console.log(email.value)
+                console.log(password.value)
+               // console.log(element.emails)
+                if(array[i].emails == email.value && array[i].passwords == password.value)
+                {
+                    
+                   return
+                    
+
+                }
+                
+                
+            }
+            alert("Enter correct details")
+                   log.href = ""
+                   return
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+#photoContainer
+{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+    padding: 20px 30px;
+}
+#photoContainer >img
+{
+    width: 100%;
+    height: 500px;
+}
+#rightContainer
+{
+    width: 45%;
+    padding: 10px;  
+}
+#detailsContainer
+{
+    padding: 0px 0px 0px 30px;
+}
+#sizeText
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+#sizeText >a
+{
+    margin-top: 21px;
+}
+#sizeBoxContainer
+{   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 60%;
+    padding: 0px 100px 0px 30px ;
+}
+#sizeBoxContainer >div
+{
+    margin: auto;
+    width: 50px;
+    height: 45px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+#sizeBoxContainer >div >h4
+{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#buttonContainer
+{
+    display: flex;
+    padding: 30px 30px ;
+}
+#buttonContainer :first-child
+{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    background: #fc6486;
+    display: table-cell;
+    width: 55%;
+    letter-spacing: 1px;
+    padding: 18px 0;
+    float: left;
+    border: none;
+    cursor: pointer;
+}
+#buttonContainer :last-child
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    display: table-cell;
+    letter-spacing: 1px;
+    padding: 17px 10px;
+    border: 1px solid #dcdcdc;
+    float: left;
+    width: 42%;
+    box-sizing: border-box;
+    margin-left: 3%;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#offerContainer
+{
+    border: 1px solid #999;
+    width:  81%;
+    padding: 0px 20px;
+    margin-left:30px ;
+}
+#offerContainer >p
+{
+    color: #999;
+}
+#pinCodeContainer
+{
+    border: 1px solid #999;
+    width:  81%;
+    padding: 0px 20px;
+    margin-left:30px;
+    margin-top: 20px;
+}
+#pinCodeContainer input
+{
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline;
+}
+#pinCodeContainer button
+{
+    padding: 15.5px;
+    border: 1px solid #dcdcdc;
+    width: 18%;
+    margin-left: -5px;
+    border-left: white;
+    background-color: white;
+    box-sizing: border-box;
+    color: #fc6486;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;  
+    display: inline;
+}
+#pinCodeContainer p{
+    color: #555;
+}
+#descriptionContainer >div 
+{
+    border: 1px solid #999;
+    width:  81%;
+    padding: 0px 20px;
+    margin-left:30px;
+    margin-top: -16px; 
+    display: none;   
+}
+#descriptionContainer li
+{
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #dcdcdc;
+    margin-right: 1px; 
+}
+#descriptionContainer p
+{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #999;
+}
+#descriptionContainer table
+{   
+    display: table;
+    border-spacing: 2px;
+    border-top-color: rgb(220, 220, 220);
+    border-right-color: rgb(220, 220, 220);
+    border-bottom-color: rgb(220, 220, 220);
+    border-left-color: rgb(220, 220, 220);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    width: 80%;
+    border-collapse: collapse;
+    border-color: #555;
+    border: 1px ;
+}
+.descriptionHead
+{
+    display: inline-block;
+}
+.similarProductsSlider 
+{
+    padding: 5px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+#heading
+{  
+    padding: 10px;
+    text-align: center;
+}
+#heading >h2
+{
+    display: inline;
+}
+#heading >hr
+{
+    width: 40px;
+    display: inline-block;
+}
+.similarProductsSlider::-webkit-scrollbar
+{
+    display: none;
+}
+.similarProductsSlider >div >img
+{
+   width: 250px;
+   cursor: pointer;
+}
+.similarProducts
+{
+  width: 250px;
+  height: 450px;
+  margin-right: 15px;
+}
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn 
+{
+  left: 10px;
+}
+
+.nxt-btn {
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 1;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+#similarProducts
+{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden; 
+}
+

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+#leftContainer
+{
+    width: 25%; 
+    padding: 15px;
+    padding-left: 100px;
+    font-family: 'Lato', sans-serif;
+    color: #323232;
+}
+
+#leftContainer > hr
+{
+    margin:-10px;
+    width: 100%;
+}
+
+.right_arrow
+{   
+    float: left;
+    width: 15px;
+    height: 100%;
+    margin-top: 25px;
+    
+}
+.optionHead
+{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.optionsContent
+{
+    display: none;
+    padding-left: 20px; 
+}
+#rightContainer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-left: 20px;
+   
+}
+#filterOptions
+{
+    height: 150px;
+    width: 98%;
+    display: grid;
+    padding: 2px;
+    grid-template-columns: repeat(5,1fr);
+    height: 62%;
+}
+#filterOptions >select
+{  
+    width: 90%; 
+    height: 32px;
+    color: #919191;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: -10px;
+    border: 1px solid #e1e1e1;
+    font-size: 12px;
+    padding-right: 10px;
+}
+.arrow_down
+{
+    width: 10px;
+    margin-top: 10px;
+    float: right;
+}
+#filterOptions >div >p
+{
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline;
+    float: left;
+    
+}
+.filterContent 
+{
+    display: none;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 105%;
+    display:none;
+    border: 1px solid black;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    font-size: 12px;
+}
+.not_active
+{
+    display: flex;
+}
+
+#sortContainer
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight:600;
+    
+}
+#sortContainer select
+{
+    border: none;
+    font-size: 14px;
+    font-weight:600;
+    color: #323232;
+    font-family: 'Lato', sans-serif;
+}
+#productContainer
+{
+    
+    padding: 15px; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 25px; 
+}
+#productContainer >div
+{
+    
+    cursor: pointer;
+}
+#productContainer >div >img
+{
+    width:100%;
+    
+}
+#productContainer >div > h4
+{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+#productContainer >div > p
+{
+    margin-top: -15px;
+}
+#loadMore
+{
+    margin: auto;
+    width: 65%;
+    padding: 12px;
+    border: 1px solid #ffa2b6;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffa2b6;
+    font-weight: 600;
+}   
+@media all and (min-width:86px) and (max-width:750px)
+{
+    #rightContainer{
+        padding-right: 2px;
+        padding-left: 5px;
+    }
+    #leftContainer
+    {
+        padding-left: 8px;
+        
+    }
+}

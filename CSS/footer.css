@@ -1,0 +1,206 @@
+.footer
+{
+  background-color: #fbfbfb !important;
+  border-top: 0.1vh solid #d2d2d2;
+  margin-top: 13vh;
+  /* height: 50vh; */
+}
+.headlinef
+{
+  width: 50vw;
+  font-size: 1.76vw;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 5vh;
+  margin-left: 3vh;
+}
+.borderf1
+{
+  width: 45vw;
+  height: 0.2vh ;
+  background-color: #d2d2d2;
+  margin-top: 7.5vh;
+  
+}
+.footertext
+{
+  padding: 1.5vh 2.5vw 0 2.5vw;
+  font-size: 1.26vw;
+  color: #323232;
+  height: 35vh;
+  overflow-x: scroll;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+}
+.borderf2
+{
+  width: 96vw;
+  height: 0.1vh ;
+  background-color: #d2d2d2;
+  margin-top: 4vh;
+  margin-left: 2vw;
+  
+}
+
+.logobox
+{
+  width: 69.2vw;
+  margin-left: 3vw;
+  height: 19.5vh;
+  margin-top: 6vh;
+}
+.logobox img
+{
+  width: 100%;
+  height: 100%;
+}
+.googleplaylogo,.applelogo
+{
+   width: 10vw;
+   height: 8vh;
+   margin-left: 7vw;
+   margin-top: -1.5vh;
+}
+.googleplaylogo img,.applelogo img
+{
+  width: 100%;
+  height: 100%;
+}
+.applelogo
+{
+  margin-top: 3vh;
+}
+.flex3
+{
+  display: flex;
+}
+.flex3 ul,.flex5 ul
+{
+  margin-left: 2vw;
+  margin-top: 5vh;
+  list-style: none;
+
+}
+.flex3 ul li ,.flex5 ul li
+{
+  font-size: 1.45vw;
+  color: #323232;
+  font-weight: 490;
+  margin-top: 1vh;
+
+
+}
+.borderf30
+{
+  width: 0.1vh;
+  height: 42vh;
+  background-color: #d2d2d2;
+  margin-left: 11.2vh;
+  margin-top: 6vh;
+}
+.flex4 ul
+{
+  margin-left: 3.5vw;
+  margin-top: 3vh;
+  list-style: none;
+}
+.flex4 ul li
+{
+  font-size: 1.45vw;
+  color: #323232;
+  font-weight: 490;
+  margin-top: 1vh;
+
+}
+.headlinef5
+{
+  font-size: 1.76vw;
+  font-weight: 600;
+  
+  color: #323232;
+  margin-top: 3vh;
+  margin-left: 4.1vh;
+}
+.borderf4
+{
+  width: 0.1vh;
+  height: 33vh;
+  background-color: #d2d2d2;
+  margin-left: 10vh;
+  margin-top: 6vh;
+}
+.paymentlogo
+{
+  width: 23vw;
+  height: 34vh;
+  margin-top: -2vh;
+  margin-left: 4vw;
+}
+.lasthomeclass
+{
+  padding: 3vh 2vw 4vw 2vw;
+  font-size: 1.5vw;
+  font-weight: 400 !important;
+  line-height: 3vw;
+  white-space: 1vh;
+  letter-spacing: 0.11vh;
+  cursor: pointer;
+}
+.borderf3
+{
+  width: 98vw;
+  height: 0.1vh ;
+  background-color: #d2d2d2;
+  margin-top: 4vh;
+  /* margin-left: 2vw; */
+  margin-left: 0;
+  
+}
+.copyright
+{
+  font-size: 1.5vw;
+  font-weight: 430;
+  text-align: center;
+  color: #323232;
+  margin-top: 2.8vh;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.block8 input
+{
+   width: 22vw;
+   height: 8vh;
+   outline: none;
+   border: 0.1vh solid #d2d2d2;
+   margin-left: 6vw;
+   
+}
+.block8 input::placeholder
+{
+  color: #323232;
+  font-weight: 550;
+  font-size: 1.4vw;
+ 
+}
+.block8 button
+{
+  width: 8vw;
+  height: 8vh;
+  outline: none;
+  background-color: #323232;
+  color: white;
+}
+.facebook
+{
+  margin-left: 12vw;
+  margin-top: -2.7vh;
+}
+.twitter
+{
+  margin-left: 1.5vh;
+  margin-top: -1.7vh;
+}
